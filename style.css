@@ -13,7 +13,7 @@ body {
 }
 
 /* ------------------------------------------------ */
-/* ------------------------ NAV     --------------- */
+/* ------------------------ NAVIGATION--------------- */
 /* ------------------------------------------------ */
 /*
 header nav ul {
@@ -39,7 +39,7 @@ header nav ul {
 /* ------------------------ LAYOUT ---------------- */
 /* ------------------------------------------------ */
 .full-height {
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .astronaut {
@@ -50,25 +50,81 @@ header nav ul {
 } 
 
 .text-page {
+    
+    color: white;
     background-color: seagreen;
+    background-image: url("images/rymden.jpg");
+    background-size: cover;
+    background-position: cover;
+   
 }
+
+.container {
+    position: absolute;
+    max-width: fit-content;
+    
+  
+}
+.stanna-i-ramen-text {
+    word-wrap: break-word;
+    position: relative;
+    
+   
+}
+
+
 
 /* ------------------------------------------------ */
 /* ------------------------ hamburgare------------- */
 /* ------------------------------------------------ */
 
-button span {
-    width: 48px;
-    height: 7px;
+.meny-button {
+    position: relative;
+    display: flex;
+    width: 50px;
+    height: 10px;
     margin-bottom: 6px;
     border-radius: 8px;
-    display: block;
-    background-color: black;
-    position: relative;
-    left: 0;
+    background-color: rgb(0, 0, 0);
+    top: 20px;
+    left: 40px;
     transition: all 0.5s ease-in-out;
 }
+.meny-button-burger {
+    width: 50px;
+    height: 10px;
+    background:rgb(0, 0, 0)
+    border-radius 5px;
+    transition: all 0.5s ease-in-out;
+}
+.meny-button-burger::before .meny-button-burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.meny-button-burger::before {
+    transform: translateY(-16px);
+    
+}
+.meny-button-burger::after {
+    transform: translateY(16px);
 
+}
+.menu-btn.open .meny-button-burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .meny-button-burger::before {
+
+}
+   
+/*
 button span:nth-child(odd) {
     left: 3px;
 }
@@ -83,21 +139,7 @@ button:hover span:nth-child(odd) {
 
 button:hover span:nth-child(2) {
     left: 0px;
-}
-/* ------------------------------------------------ */
-/* ------------------------hamburgare2------------- */
-/* ------------------------------------------------ */
-
-button + .menu {
-    display: none;
-    opacity: 0;
-    visibility: hidden;
-  }
-  button.menu-open + .menu {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-  }
+} */
 
 
 
@@ -109,12 +151,12 @@ button + .menu {
 .astronaut {
     background-image: url("images/astronaut.jpg");
     background-size: cover;
-    background-position: cover;
+    background-position: 50% 50%;
 }
 
 .astronaut .heading-box {
     border: 4px solid black;
-    width: 40%;
+    width: 11rem;
     background-color: rgba(255, 255, 255, 0.7);
     position: absolute;
     top: 80px;
@@ -133,36 +175,94 @@ button + .menu {
 
 .astronaut .heading-box .read-our-story-link {
     text-align: right;
+    font-size: 1rem;
 }
 
 /* ------------------------------------------------ */
-/* ------------------------ DESKTOP --------------- */
+/* ------------------------ TEXT PAGE ------------- */
+/* ------------------------------------------------ */
+
+.full-height .text-page {
+    position: absolute;
+    color: #fff;
+    background-image: url("images/rymden.jpg");
+    background-size: cover;
+    background-position: cover;
+    
+    font-family: rubik;
+   
+}
+
+.container {
+    position: absolute;
+    word-wrap: break-word;
+    
+  
+}
+.stanna-i-ramen-text {
+
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 170%;
+    font-family: rubik;
+    
+    
+   
+} 
+.ground-control-rubrik {
+    margin-left: 30%;
+    font-weight: 200;
+}
+pre {
+    font-family: rubik;
+    font-weight: 200;
+}
+q {
+    font-size: xx-large;
+    font-style: italic;
+    font-family: rubik;
+    font-weight: 100;
+}
+
+
+/* ------------------------------------------------ */
+/* --------STÖRRE STORLEKAR, DESKTOP -------------- */
 /* ------------------------------------------------ */
 
 @media screen and (min-width: 800px) {
+
     .astronaut .heading-box {
-        width: 15rem;
-    }   /*
-    .astronaut .heading-box .link {
+        width: 14rem;
+    }
+
+    .astronaut .heading-box .read-our-story-link {
         text-align: right;
-    } */
-
-    .astronaut .heading-box .link span {
+    }   
+  
+    .astronaut .heading-box .read-our-story-link span {
         position: relative;
-        left: 0px;
-        transition: left 0.5s cubic-bezier(0.65, 0, 0.35, 1);
+        left: 0;
+        transition: left 1s cubic-bezier(0.65, 0, 0.35, 1); 
     }
 
-    .astronaut .heading-box .link:hover span {
+    /*för att pilen ska röra på sig*/
+    .astronaut .heading-box .read-our-story-link:hover span {
         left: 10px;
+        
     }
-}
+} 
+
+    
+
 
 /* ------------------------------------------------ */
 /* ------------------------ DARK MODE ------------- */
 /* ------------------------------------------------ */
+
+/*
 @media (prefers-color-scheme: dark) {
-    .astronaut .heading-box .link {
-        color: red;
+    .astronaut .heading-box .read-our-story-link {
+        color: orangered;
     }
-}
+}    */
