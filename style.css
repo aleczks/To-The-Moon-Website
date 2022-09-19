@@ -8,7 +8,7 @@ body {
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: orange;
+        background-color: cornflowerblue;
     }
 }
 
@@ -39,11 +39,11 @@ header nav ul {
 /* ------------------------ LAYOUT ---------------- */
 /* ------------------------------------------------ */
 .full-height {
-    min-height: 90vh;
+    min-height: 100vh;
 }
 
 .astronaut {
-    background-color: coral;  
+    background-color: blue;  
     background-image: url("images/astronaut.jpg");
     background-size: cover;
     background-position: cover;
@@ -54,10 +54,10 @@ header nav ul {
     color: white;
     background-color: seagreen;
     background-image: url("images/rymden.jpg");
-    background-size: cover;
-    background-position: cover;
+    background-size: cover; 
+    
    
-}
+} 
 
 .container {
     position: absolute;
@@ -66,7 +66,7 @@ header nav ul {
   
 }
 .stanna-i-ramen-text {
-    word-wrap: break-word;
+    
     position: relative;
     
    
@@ -79,15 +79,15 @@ header nav ul {
 /* ------------------------------------------------ */
 
 .meny-button {
-    position: relative;
+    position: fixed;
     display: flex;
     width: 50px;
-    height: 10px;
+    height: 7px;
     margin-bottom: 6px;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: rgb(0, 0, 0);
     top: 20px;
-    left: 40px;
+    right: 20px;
     transition: all 0.5s ease-in-out;
 }
 .meny-button-burger {
@@ -191,11 +191,12 @@ button:hover span:nth-child(2) {
     
     font-family: rubik;
    
-}
+} 
 
 .container {
     position: absolute;
     word-wrap: break-word;
+    border: 2px solid #fff;
     
   
 }
