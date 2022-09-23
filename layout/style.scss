@@ -1,0 +1,229 @@
+/* ------------------------------------------------ */
+/* ------------------------ HELPERS --------------- */
+/* ------------------------------------------------ */
+
+@media screen and (min-width: 640px) {
+    @import "layout/mobil";
+  }
+  
+  @media screen and (min-width: 1024px) {
+    @import "layout/desktop";
+  }
+
+
+/* ------------------------------------------------ */
+/* ------------------------NAVIGATION-------------- */
+/* ------------------------------------------------ */
+
+header nav ul {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.second {
+    order: 4;
+}
+
+.important {
+    order: 3;
+} 
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------ LAYOUT ---------------- */
+/* ------------------------------------------------ */
+.full-height {
+    min-height: 100vh;
+}
+
+.astronaut {
+    background-color: blue;  
+    background-image: url("../assets/photos/astronaut.jpg");
+    background-size: cover;
+    background-position: 50%;
+} 
+
+.text-page {
+   
+    color: white;
+    background-color: seagreen;
+    background-image: url("../assets/photos/rymden.jpg");
+    background-size: cover; 
+    
+   
+} 
+
+.container {
+    position: absolute;
+    max-width: fit-content;
+    
+  
+}
+.stanna-i-ramen-text {
+    
+    position: relative;
+    
+   
+}
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------ hamburgare------------- */
+/* ------------------------------------------------ */
+
+.meny-button {
+    position: fixed;
+    display: flex;
+    width: 50px;
+    height: 7px;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    top: 20px;
+    right: 20px;
+    transition: all 0.5s ease-in-out;
+}
+.meny-button-burger {
+    width: 50px;
+    height: 10px;
+    background:rgb(0, 0, 0)
+    border-radius 5px;
+    transition: all 0.5s ease-in-out;
+}
+.meny-button-burger::before .meny-button-burger::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 10px;
+    background: rgb(0, 0, 0);
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    
+}
+.meny-button-burger::before {
+    transform: translateY(-16px);
+    
+}
+.meny-button-burger::after {
+    transform: translateY(16px);
+
+}
+.menu-btn.open .meny-button-burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .meny-button-burger::before {
+    background: fixed;
+}
+   
+
+button span:nth-child(odd) {
+    left: 3px;
+}
+
+button span:nth-child(2) {
+    left: -3px;
+}
+
+button:hover span:nth-child(odd) {
+    left: 0px;
+}
+
+button:hover span:nth-child(2) {
+    left: 0px;
+} 
+
+
+
+
+/* ------------------------------------------------ */
+/* ------------------------ ASTRONAUT ------------- */
+/* ------------------------------------------------ */
+
+
+.astronaut .heading-box {
+    border: 4px solid black;
+    width: 11rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.astronaut .heading-box .to-the-moon-text {
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.astronaut .heading-box .read-our-story-link {
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------ */
+/* ------------------------ TEXT PAGE ------------- */
+/* ------------------------------------------------ */
+
+.full-height .text-page {
+    position: absolute;
+    color: #fff;
+    background-image: url("../assets/photos/rymden.jpg");
+    background-size: cover;
+    background-position: cover;
+    font-family: Rubik, sans-serif;
+} 
+
+.container {
+    position: absolute;
+    word-wrap: break-word;
+    border: 2px solid #fff;
+    
+  
+}
+.stanna-i-ramen-text {
+
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 170%;
+    font-family: rubik;
+   
+} 
+.ground-control-rubrik {
+    margin-left: 30%;
+    font-weight: 200;
+}
+pre {
+    font-family: rubik;
+    font-weight: 200;
+}
+q {
+    font-size: xx-large;
+    font-style: italic;
+    font-family: rubik;
+    font-weight: 100;
+}
+
+
+/* ------------------------------------------------ */
+/* ------------------------ DARK MODE ------------- */
+/* ------------------------------------------------ */
+
+
+@media (prefers-color-scheme: dark) {
+    .astronaut .heading-box .read-our-story-link {
+        color: orangered;
+    }
+}    
