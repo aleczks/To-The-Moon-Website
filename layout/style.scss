@@ -70,6 +70,31 @@ header nav ul {
     
    
 }
+/* ------------------------------------------------ */
+/* ------------------------MENY VIDEO-------------- */
+/* ------------------------------------------------ */
+button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+
+}
+
+button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 6pxpx;
+    margin-bottom: 4px;
+
+}
+
+input:checked + button:nth-child(2) {
+    opacity: 0;
+
+}
 
 
 
@@ -77,6 +102,7 @@ header nav ul {
 /* ------------------------ hamburgare------------- */
 /* ------------------------------------------------ */
 
+/*
 .meny-button {
     position: fixed;
     display: flex;
@@ -139,7 +165,7 @@ button:hover span:nth-child(odd) {
 button:hover span:nth-child(2) {
     left: 0px;
 } 
-
+ */
 
 
 

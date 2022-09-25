@@ -13,8 +13,101 @@ body {
 }
 
 /* ------------------------------------------------ */
-/* ------------------------NAVIGATION-------------- */
+/* ------------------------MENY VIDEO-------------- */
 /* ------------------------------------------------ */
+button {
+    width: 35px;
+    height: 35px;
+    background: transparent;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 2;
+    pointer-events: none;
+    
+}
+
+button span {
+    display: block;
+    width: 45px;
+    height: 9px;
+    background-color: black;
+    border-radius: 8px;
+    margin-bottom: 4px;  
+
+}
+
+input {
+    position: fixed;
+    right: 14px;
+    top: 13px;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    opacity: 0;
+}
+
+
+
+input:checked + .menu-container button span {
+    position: absolute;
+    transition: all 0.4s ease-in-out;
+}
+
+input:checked + .menu-container button span:nth-child(2) {
+    opacity: 0;
+
+}
+input:checked + .menu-container button span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+input:checked + .menu-container button span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+/* ------------------------------------------------ */
+/* ------------------NAVIGATION VIDEO-------------- */
+/* ------------------------------------------------ */
+
+nav {
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.73);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
+}
+input:checked + .menu-container nav {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: xxx-large;
+    font-family: Rubik, serif;
+   
+}
+
 
 header nav ul {
     list-style: none;
@@ -33,6 +126,22 @@ header nav ul {
     order: 3;
 } 
 
+button span:nth-child(odd) {
+    left: 3px;
+}
+
+button span:nth-child(2) {
+    left: -3px;
+}
+
+button:hover span:nth-child(odd) {
+    left: 0px;
+}
+
+button:hover span:nth-child(2) {
+    left: 0px;
+} 
+
 
 
 /* ------------------------------------------------ */
@@ -40,7 +149,7 @@ header nav ul {
 /* ------------------------------------------------ */
 .full-height {
     min-height: 100vh;
-    min-width: 100vw;
+    
     
 }
 
@@ -79,7 +188,7 @@ header nav ul {
 /* ------------------------------------------------ */
 /* ------------------------ hamburgare------------- */
 /* ------------------------------------------------ */
-
+ /*
 .meny-button {
     position: fixed;
     display: flex;
@@ -127,23 +236,8 @@ header nav ul {
 }
    
 
-button span:nth-child(odd) {
-    left: 3px;
-}
 
-button span:nth-child(2) {
-    left: -3px;
-}
-
-button:hover span:nth-child(odd) {
-    left: 0px;
-}
-
-button:hover span:nth-child(2) {
-    left: 0px;
-} 
-
-
+*/
 
 
 /* ------------------------------------------------ */
@@ -190,7 +284,6 @@ button:hover span:nth-child(2) {
     background-image: url("../assets/photos/rymden.jpg");
     background-size: cover;
     background-position: cover;
-    
     font-family: rubik;
    
 } 
