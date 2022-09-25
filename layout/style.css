@@ -13,7 +13,43 @@ body {
 }
 
 /* ------------------------------------------------ */
-/* ------------------------MENY VIDEO-------------- */
+/* ------------------------ LAYOUT ---------------- */
+/* ------------------------------------------------ */
+
+
+.full-height {
+    min-height: 100vh; 
+}
+
+.astronaut {
+    background-color: blue;  
+    background-image: url("../assets/photos/astronaut.jpg");
+    background-size: cover;
+    background-position: 50%;
+} 
+
+.text-page {
+    
+    color: white;
+    background-color: seagreen;
+    background-image: url("../assets/photos/rymden.jpg");
+    background-size: cover; 
+      
+} 
+
+.container {
+    position: absolute;
+    max-width: fit-content; 
+  
+}
+.stanna-i-ramen-text {
+    
+    position: relative;   
+   
+}
+
+/* ------------------------------------------------ */
+/* --------------------HAMBURGARMENYN-------------- */
 /* ------------------------------------------------ */
 button {
     width: 35px;
@@ -50,8 +86,6 @@ input {
     opacity: 0;
 }
 
-
-
 input:checked + .menu-container button span {
     position: absolute;
     transition: all 0.4s ease-in-out;
@@ -70,7 +104,7 @@ input:checked + .menu-container button span:nth-child(3) {
 }
 
 /* ------------------------------------------------ */
-/* ------------------NAVIGATION VIDEO-------------- */
+/* ----------NAVIGATION / OPEN BURGER-------------- */
 /* ------------------------------------------------ */
 
 nav {
@@ -92,7 +126,6 @@ input:checked + .menu-container nav {
     visibility: visible;
 }
 
-
 ul {
     margin: 0;
     padding: 0;
@@ -108,140 +141,8 @@ ul {
    
 }
 
-
-header nav ul {
-    list-style: none;
-    padding-left: 0;
-    display: flex;
-    gap: 20px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-.second {
-    order: 4;
-}
-
-.important {
-    order: 3;
-} 
-
-button span:nth-child(odd) {
-    left: 3px;
-}
-
-button span:nth-child(2) {
-    left: -3px;
-}
-
-button:hover span:nth-child(odd) {
-    left: 0px;
-}
-
-button:hover span:nth-child(2) {
-    left: 0px;
-} 
-
-
-
 /* ------------------------------------------------ */
-/* ------------------------ LAYOUT ---------------- */
-/* ------------------------------------------------ */
-.full-height {
-    min-height: 100vh;
-    
-    
-}
-
-.astronaut {
-    background-color: blue;  
-    background-image: url("../assets/photos/astronaut.jpg");
-    background-size: cover;
-    background-position: 50%;
-} 
-
-.text-page {
-    
-    color: white;
-    background-color: seagreen;
-    background-image: url("../assets/photos/rymden.jpg");
-    background-size: cover; 
-    
-   
-} 
-
-.container {
-    position: absolute;
-    max-width: fit-content;
-    
-  
-}
-.stanna-i-ramen-text {
-    
-    position: relative;
-    
-   
-}
-
-
-
-/* ------------------------------------------------ */
-/* ------------------------ hamburgare------------- */
-/* ------------------------------------------------ */
- /*
-.meny-button {
-    position: fixed;
-    display: flex;
-    width: 50px;
-    height: 7px;
-    margin-bottom: 6px;
-    border-radius: 5px;
-    background-color: rgb(0, 0, 0);
-    top: 20px;
-    right: 20px;
-    transition: all 0.5s ease-in-out;
-}
-.meny-button-burger {
-    width: 50px;
-    height: 10px;
-    background:rgb(0, 0, 0)
-    border-radius 5px;
-    transition: all 0.5s ease-in-out;
-}
-.meny-button-burger::before .meny-button-burger::after {
-    content: '';
-    position: absolute;
-    width: 50px;
-    height: 10px;
-    background: rgb(0, 0, 0);
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-    
-}
-.meny-button-burger::before {
-    transform: translateY(-16px);
-    
-}
-.meny-button-burger::after {
-    transform: translateY(16px);
-
-}
-.menu-btn.open .meny-button-burger {
-    transform: translateX(-50px);
-    background: transparent;
-}
-
-.menu-btn.open .meny-button-burger::before { 
-
-}
-   
-
-
-*/
-
-
-/* ------------------------------------------------ */
-/* ------------------------ ASTRONAUT ------------- */
+/* -------------------- ASTRONAUT SECTION---------- */
 /* ------------------------------------------------ */
 
 .astronaut {
@@ -275,7 +176,7 @@ button:hover span:nth-child(2) {
 }
 
 /* ------------------------------------------------ */
-/* ------------------------ TEXT PAGE ------------- */
+/* --------------------- TEXT PAGE SECTION--------- */
 /* ------------------------------------------------ */
 
 .full-height .text-page {
@@ -284,15 +185,14 @@ button:hover span:nth-child(2) {
     background-image: url("../assets/photos/rymden.jpg");
     background-size: cover;
     background-position: cover;
-    font-family: rubik;
+    font-family: Rubik, serif;
    
 } 
 
 .container {
     position: absolute;
     word-wrap: break-word;
-    border: 2px solid #fff;
-    
+    border: 2px solid #fff;   
   
 }
 .stanna-i-ramen-text {
@@ -301,9 +201,7 @@ button:hover span:nth-child(2) {
     font-size: 1rem;
     font-weight: 200;
     line-height: 170%;
-    font-family: rubik;
-    
-    
+    font-family: rubik;   
    
 } 
 .ground-control-rubrik {
@@ -349,16 +247,18 @@ q {
     }
 } 
 
+
     
 
 
 /* ------------------------------------------------ */
 /* ------------------------ DARK MODE ------------- */
 /* ------------------------------------------------ */
-
+/*
 
 @media (prefers-color-scheme: dark) {
     .astronaut .heading-box .read-our-story-link {
         color: orangered;
     }
-}    
+}    */
+ 
