@@ -2,56 +2,183 @@
 /* ------------------------ HELPERS --------------- */
 /* ------------------------------------------------ */
 
-body {
-    background-color: black;
+* {
+    padding: 0;
+    margin: 0;
 }
 
 @media screen and (min-width: 600px) {
     body {
-        background-color: cornflowerblue;
+        background-color: palevioletred;
     }
 }
-
-/* ------------------------------------------------ */
-/* ------------------------ LAYOUT ---------------- */
-/* ------------------------------------------------ */
-
 
 .full-height {
     min-height: 100vh; 
 }
 
+/* ------------------------------------------------ */
+/* -------------------- ASTRONAUT SECTION---------- */
+/* ------------------------------------------------ */
+
+
 .astronaut {
-    background-color: blue;  
     background-image: url("../assets/photos/astronaut.jpg");
     background-size: cover;
-    background-position: 50%;
-} 
+    background-position: 50% 50%; 
+}
 
-.text-page {
-    
+.astronaut .heading-box {
+    border: 4px solid black;
+    width: 11rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    top: 80px;
+    left: 40px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.astronaut .heading-box .to-the-moon-text {
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.astronaut .heading-box .read-our-story-link {
+    text-align: right;
+    font-size: 1rem;
+}
+
+/* ------------------------------------------------ */
+/* --------------------- TEXT PAGE SECTION--------- */
+/* ------------------------------------------------ */
+
+.space-ventures-text {
     color: white;
-    background-color: seagreen;
+    margin: auto;
+    width: 85%;
+    font-size: xx-large;
+    padding: 16px;
+    text-shadow: 3px 4px 12px black;
+    
+}
+
+.space {
+    font-size: 300%;
+    font-family: Rubik, serif;
+    position: relative;
+    z-index: 3;
+}
+
+
+.ventures {
+    font-size: 350%;
+    font-family: 'Times New Roman', Times, serif;
+    opacity: 0.7;
+    position: relative;
+    left: 80px;
+    top: -65px;
+
+}
+
+
+.text-page {  
+    color: white;
+    background-position: cover;
     background-image: url("../assets/photos/rymden.jpg");
-    background-size: cover; 
-      
+    background-size: cover;      
+}  
+
+.full-height .text-page {
+    position: absolute;
+    font-family: Rubik, serif;   
+   
 } 
 
 .container {
-    position: absolute;
-    max-width: fit-content; 
+    position: relative;         
   
+} 
+
+.main-article-text {
+    position: relative;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    line-height: 170%;
+    font-family: rubik; 
+    margin: 0;  
 }
-.stanna-i-ramen-text {
+
+/* ------------------------------------------------ */
+/* ------------TEXTER I TEXT PAGE SECTION---------- */
+/* ------------------------------------------------ */
+
+.pink-major-tom-link {
+    font-size: 1rem;
+    position: relative;
+    left: 65px;
+    color:#D200A2;
+    text-decoration: underline;
     
-    position: relative;   
-   
 }
+.arrow {
+    font-size: 2rem;
+    position: relative;
+    color: #D200A2;
+}
+   
+ 
+h3 {
+    font-family: Rubik, serif;
+    position: relative;
+    bottom: 80px;
+    left: 100px;
+    font-weight: 400;
+    font-size: xx-large;
+    
+}
+pre {
+    font-family: rubik;
+    font-weight: 200;
+    margin: 0;
+}
+
+.planet-earth-is-blue {
+    color: white;
+}
+
+
+.floating-quote {
+    font-style: italic;
+    font-size: x-large;
+    font-style: italic;
+    font-family: rubik;
+    font-weight: 100;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* rör ej !! */
+
 
 /* ------------------------------------------------ */
 /* --------------------HAMBURGARMENYN-------------- */
 /* ------------------------------------------------ */
-button {
+
+.burger-button {
     width: 35px;
     height: 35px;
     background: transparent;
@@ -66,7 +193,7 @@ button {
     
 }
 
-button span {
+.burger-button .line {
     display: block;
     width: 45px;
     height: 9px;
@@ -86,20 +213,20 @@ input {
     opacity: 0;
 }
 
-input:checked + .menu-container button span {
+input:checked + .menu-container .burger-button .line {
     position: absolute;
     transition: all 0.4s ease-in-out;
 }
 
-input:checked + .menu-container button span:nth-child(2) {
+input:checked + .menu-container .burger-button .line:nth-child(2) {
     opacity: 0;
 
 }
-input:checked + .menu-container button span:nth-child(1) {
+input:checked + .menu-container .burger-button .line:nth-child(1) {
     transform: rotate(45deg);
 }
 
-input:checked + .menu-container button span:nth-child(3) {
+input:checked + .menu-container .burger-button .line:nth-child(3) {
     transform: rotate(-45deg);
 }
 
@@ -138,86 +265,16 @@ ul {
     text-align: center;
     font-size: xxx-large;
     font-family: Rubik, serif;
+    text-transform: uppercase;
    
 }
 
-/* ------------------------------------------------ */
-/* -------------------- ASTRONAUT SECTION---------- */
-/* ------------------------------------------------ */
-
-.astronaut {
-    background-image: url("../assets/photos/astronaut.jpg");
-    background-size: cover;
-    background-position: 50%;
-}
-
-.astronaut .heading-box {
-    border: 4px solid black;
-    width: 11rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 80px;
-    left: 40px;
-    padding: 20px;
-    font-family: 'Rubik', sans-serif;
-}
-
-.astronaut .heading-box .to-the-moon-text {
-    text-align: center;
-    text-transform: uppercase; 
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-}
-
-.astronaut .heading-box .read-our-story-link {
-    text-align: right;
-    font-size: 1rem;
-}
-
-/* ------------------------------------------------ */
-/* --------------------- TEXT PAGE SECTION--------- */
-/* ------------------------------------------------ */
-
-.full-height .text-page {
-    position: absolute;
-    color: #fff;
-    background-image: url("../assets/photos/rymden.jpg");
-    background-size: cover;
-    background-position: cover;
+.menu-text {
     font-family: Rubik, serif;
-   
-} 
+    font-weight: 600;
+}
 
-.container {
-    position: absolute;
-    word-wrap: break-word;
-    border: 2px solid #fff;   
-  
-}
-.stanna-i-ramen-text {
 
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 200;
-    line-height: 170%;
-    font-family: rubik;   
-   
-} 
-.ground-control-rubrik {
-    margin-left: 30%;
-    font-weight: 200;
-}
-pre {
-    font-family: rubik;
-    font-weight: 200;
-}
-q {
-    font-size: xx-large;
-    font-style: italic;
-    font-family: rubik;
-    font-weight: 100;
-}
 
 
 /* ------------------------------------------------ */
