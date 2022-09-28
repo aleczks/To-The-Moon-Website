@@ -56,13 +56,47 @@
 /* --------------------- TEXT PAGE SECTION--------- */
 /* ------------------------------------------------ */
 
-.space-ventures-text {
+.full-page {
+    min-height: 100vh;
+    
+}
+
+.text-page {  
+    color: white;
+    background-position: cover;
+    background-image: url("../assets/photos/rymden.jpg");
+    background-size: cover;
+    font-family: Rubik, serif;
+}  
+
+.text-page .text-container {
+    position: relative;     
+    display: block;     
+} 
+
+.col1 .col2 {
+    display: flex;
+}
+
+
+
+/* ------------------------------------------------ */
+/* ----------TEXT PAGE SECTION COLUMN 1------------ */
+/* ------------------------------------------------ */
+
+.col1 {
+    outline: 5px solid rgb(255, 255, 255);
+    margin: 3px;
+}
+
+.space-ventures {
     color: white;
     margin: auto;
     width: 85%;
     font-size: xx-large;
-    padding: 16px;
-    text-shadow: 3px 4px 12px black;
+    text-shadow: 3px 4px 12px black;  
+
+   
     
 }
 
@@ -73,7 +107,6 @@
     z-index: 3;
 }
 
-
 .ventures {
     font-size: 350%;
     font-family: 'Times New Roman', Times, serif;
@@ -81,46 +114,89 @@
     position: relative;
     left: 80px;
     top: -65px;
+    font-weight: 550;
 
 }
 
 
-.text-page {  
-    color: white;
-    background-position: cover;
-    background-image: url("../assets/photos/rymden.jpg");
-    background-size: cover;      
-}  
+h3 {
+    font-family: Rubik, serif;
+    
+    font-weight: 400;
+    font-size: xx-large;  
 
-.full-height .text-page {
-    position: absolute;
-    font-family: Rubik, serif;   
-   
-} 
+    
+    
+}
 
-.container {
-    position: relative;         
-  
-} 
-
-.main-article-text {
+.protein-pills-article {
     position: relative;
-    text-align: left;
+    left: 7%;
     font-size: 1rem;
     font-weight: 200;
     line-height: 170%;
     font-family: rubik; 
     margin: 0;  
+
+    
+
 }
 
+
+.floating-quote {
+    position: relative;
+    left: 15%;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 200;
+
+    
+    
+}
 /* ------------------------------------------------ */
-/* ------------TEXTER I TEXT PAGE SECTION---------- */
+/* ---------- MEDIA SCREEN ------------------------ */
 /* ------------------------------------------------ */
 
+@media screen and (min-width: 1024px) {
+    .full-page {
+        display: flex;
+    }
+    .col1 .col2 {
+        width: 50%;
+        gap: 100px;
+    }
+}
+
+
+/* ------------------------------------------------ */
+/* ----------TEXT PAGE SECTION COLUMN 2------------ */
+/* ------------------------------------------------ */
+
+.col2 {
+    
+}
+
+.dolt-citat {
+    font-size: xx-large;
+    
+    margin: 15px;
+    font-style: italic;
+    color: #D200A2;
+    opacity: 0.5;
+    text-shadow: 0px 0px 1.2px rgba(0, 0, 0, 0.636),
+    0px 0px 4px rgba(0, 0, 0, 0.807), 0px 0px 18px rgba(0, 0, 0, 0.21);
+}
+
+.main-article-text {
+    margin: 15px;
+    font-weight: 300;
+    
+}
+
 .pink-major-tom-link {
-    font-size: 1rem;
+    
     position: relative;
-    left: 65px;
+    left: 15px;
     color:#D200A2;
     text-decoration: underline;
     
@@ -130,21 +206,19 @@
     position: relative;
     color: #D200A2;
 }
-   
- 
-h3 {
-    font-family: Rubik, serif;
+
+.protein-pills-section .pink-major-tom-link .arrow {
     position: relative;
-    bottom: 80px;
-    left: 100px;
-    font-weight: 400;
-    font-size: xx-large;
-    
+    left: 0;
+    transition: left 0.3s ease-in-out;
 }
+
+
 pre {
     font-family: rubik;
     font-weight: 200;
     margin: 0;
+    
 }
 
 .planet-earth-is-blue {
@@ -152,14 +226,12 @@ pre {
 }
 
 
-.floating-quote {
-    font-style: italic;
-    font-size: x-large;
-    font-style: italic;
-    font-family: rubik;
-    font-weight: 100;
-    
-}
+
+
+
+
+
+
 
 
 
@@ -213,6 +285,11 @@ input {
     opacity: 0;
 }
 
+.line.middle {
+    position: relative;
+    left: -10px;
+}
+
 input:checked + .menu-container .burger-button .line {
     position: absolute;
     transition: all 0.4s ease-in-out;
@@ -220,6 +297,7 @@ input:checked + .menu-container .burger-button .line {
 
 input:checked + .menu-container .burger-button .line:nth-child(2) {
     opacity: 0;
+    
 
 }
 input:checked + .menu-container .burger-button .line:nth-child(1) {
