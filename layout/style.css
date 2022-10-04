@@ -1,239 +1,230 @@
+@charset "UTF-8";
 /* ------------------------------------------------ */
 /* ------------------------ HELPERS --------------- */
 /* ------------------------------------------------ */
-
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 600px) {
-    body {
-        background-color: palevioletred;
-    }
+  body {
+    background-color: palevioletred;
+  }
 }
-
 .full-height {
-    min-height: 100vh; 
+  min-height: 100vh;
 }
 
 /* ------------------------------------------------ */
 /* -------------------- ASTRONAUT SECTION---------- */
 /* ------------------------------------------------ */
-
-
 .astronaut {
-    background-image: url("../assets/photos/astronaut.jpg");
-    background-size: cover;
-    background-position: 50% 50%; 
+  background-image: url("../assets/photos/astronaut.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .astronaut .heading-box {
-    border: 4px solid black;
-    width: 11rem;
-    background-color: rgba(255, 255, 255, 0.7);
-    position: absolute;
-    top: 80px;
-    left: 40px;
-    padding: 20px;
-    font-family: 'Rubik', sans-serif;
+  border: 4px solid black;
+  width: 11rem;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  padding: 20px;
+  font-family: "Rubik", sans-serif;
 }
 
 .astronaut .heading-box .to-the-moon-text {
-    text-align: center;
-    text-transform: uppercase; 
-    font-size: 3rem;
-    font-weight: 500;
-    margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 .astronaut .heading-box .read-our-story-link {
-    text-align: right;
-    font-size: 1rem;
+  text-align: right;
+  font-size: 1rem;
 }
+
+
+
 
 /* ------------------------------------------------ */
 /* --------------------- TEXT PAGE SECTION--------- */
 /* ------------------------------------------------ */
-
 .full-page {
-    min-height: 100vh;
-    
+  min-height: 100vh;
 }
 
-.text-page {  
-    color: white;
-    background-position: cover;
-    background-image: url("../assets/photos/rymden-min.jpg");
-    background-size: cover;
-    font-family: Rubik, serif;
-}  
+.text-page {
+  color: white;
+  background-position: cover;
+  background-image: url("../assets/photos/rymden-min.jpg");
+  background-size: cover;
+  font-family: Rubik, serif;
+}
 
 .text-page .text-container {
-    position: relative;     
-    display: block;     
-} 
-
-.col1 .col2 {
-    display: flex;
+  position: relative;
+  display: block;
 }
 
-
+.col1 .col2 {
+  display: flex;
+}
 
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 1------------ */
 /* ------------------------------------------------ */
-
-.col1 {
-    outline: 5px solid rgb(255, 255, 255);
-    margin: 3px;
-}
-
 .space-ventures {
-    color: white;
-    margin: auto;
-    width: 85%;
-    font-size: xx-large;
-    text-shadow: 3px 4px 12px black;  
-
-   
-    
+  color: white;
+  margin: auto;
+  width: 85%;
+  font-size: xx-large;
+  text-shadow: 3px 4px 12px black;
 }
 
 .space {
-    font-size: 300%;
-    font-family: Rubik, serif;
-    position: relative;
-    z-index: 3;
+  font-size: 300%;
+  font-family: Rubik, serif;
+  position: relative;
+  z-index: 3;
 }
 
 .ventures {
-    font-size: 350%;
-    font-family: 'Times New Roman', Times, serif;
-    opacity: 0.7;
-    position: relative;
-    left: 80px;
-    top: -65px;
-    font-weight: 550;
-
+  font-size: 350%;
+  font-family: "Times New Roman", Times, serif;
+  opacity: 0.7;
+  position: relative;
+  left: 80px;
+  top: -65px;
+  font-weight: 550;
 }
 
-
 h3 {
-    font-family: Rubik, serif;
-    
-    font-weight: 400;
-    font-size: xx-large;  
-
-    
-    
+  font-family: Rubik, serif;
+  font-weight: 400;
+  font-size: xx-large;
 }
 
 .protein-pills-article {
-    position: relative;
-    left: 7%;
-    font-size: 1rem;
-    font-weight: 200;
-    line-height: 170%;
-    font-family: rubik; 
-    margin: 0;  
-
-    
-
+  position: relative;
+  left: 7%;
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 170%;
+  font-family: rubik;
+  margin: 0;
 }
 
 
+
+/* very nice floating quote, dagens seger */
 .floating-quote {
-    position: relative;
-    left: 15%;
-    font-size: 2rem;
-    font-style: italic;
-    font-weight: 200;
-
-    
-    
+  position: relative;
+  left: 15%;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 200;
 }
+
+span {
+  position: relative;
+  z-index: 1;
+}
+
+.floating-quote::before, .floating-quote::after {
+  display: block;
+  position: absolute;
+  font-size: 5rem;
+  font-weight: bold;
+  color: grey;
+  opacity: 0.8;
+  z-index: 0;
+  line-height: 1;
+}
+
+.floating-quote::before {
+  content: open-quote;
+  top: -0.5rem;
+  left: -1.5rem;
+}
+
+.floating-quote::after {
+  content: close-quote;  
+  float: right;
+  margin-left: 6.5rem;
+  margin-top: -2rem;
+  
+}
+
 /* ------------------------------------------------ */
 /* ---------- MEDIA SCREEN ------------------------ */
 /* ------------------------------------------------ */
 
 @media screen and (min-width: 1024px) {
-    .full-page {
-        display: flex;
-    }
-    .col1 .col2 {
-        width: 50%;
-        gap: 100px;
-    }
+  .full-page {
+    display: flex;
+  }
+  
 }
-
 
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 2------------ */
 /* ------------------------------------------------ */
-
-.col2 {
-    
-}
-
 .hidden-quote {
-    font-size: xx-large;
-    
-    margin: 15px;
-    font-style: italic;
-    color: #D200A2;
-    opacity: 0.5;
-    text-shadow: 0px 0px 1.2px rgba(0, 0, 0, 0.636),
-    0px 0px 4px rgba(0, 0, 0, 0.807), 0px 0px 18px rgba(0, 0, 0, 0.21);
+  
+  font-size: 2.5rem;
+  font-weight: 200;
+  margin: 25px;
+  font-style: italic;
+  background-image: linear-gradient( bottom right, #D200A2, white, #D200A2);;
+  
+  -webkit-text-fill-color: pink;
+  opacity: 0.3;
+  
 }
+
 
 .main-article-text {
-    margin: 15px;
-    font-weight: 300;
-    
+  margin: 15px;
+  font-weight: 300;
 }
 
+/* projekt rosa länk-pilen ej underline + smooth */
 .pink-major-tom-link {
-    
-    position: relative;
-    left: 15px;
-    color:#D200A2;
-    text-decoration: underline;
-    
+  text-decoration: underline;
+  color: #D200A2;
+  margin: 25px;
 }
+
 .arrow {
-    font-size: 2rem;
-    position: relative;
-    color: #D200A2;
+  font-size: 1.5rem;    
 }
 
-.protein-pills-section .pink-major-tom-link .arrow {
-    position: relative;
-    left: 0;
-    transition: left 0.3s ease-in-out;
+.full-page .pink-major-tom-link .arrow  {
+  position: relative;
+  left: 0;
+  transition: left 1s cubic-bezier(0.65, 0, 0.35, 1); 
 }
 
-
-pre {
-    font-family: rubik;
-    font-weight: 200;
-    margin: 0;
-    
-}
-
-.planet-earth-is-blue {
-    color: white;
+.full-page .pink-major-tom-link:hover .arrow {
+  left: 10px;
 }
 
 
 
+/*Major Tom som inte vill ha texten fyltande runt sig av outgrundlig anledning */
 
-
-
-
-
-
-
+img {
+  
+  float: right;
+  margin: 0;
+  
+}
 
 
 
@@ -244,156 +235,125 @@ pre {
 
 
 /* rör ej !! */
-
-
 /* ------------------------------------------------ */
 /* --------------------HAMBURGARMENYN-------------- */
 /* ------------------------------------------------ */
-
 .burger-button {
-    width: 35px;
-    height: 35px;
-    background: transparent;
-    border: 0;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    right: 30px;
-    top: 20px;
-    z-index: 2;
-    pointer-events: none;
-    
+  width: 35px;
+  height: 35px;
+  background: transparent;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 30px;
+  top: 20px;
+  z-index: 2;
+  pointer-events: none;
 }
 
 .burger-button .line {
-    display: block;
-    width: 45px;
-    height: 9px;
-    background-color: black;
-    border-radius: 8px;
-    margin-bottom: 4px;  
-
+  display: block;
+  width: 45px;
+  height: 9px;
+  background-color: black;
+  border-radius: 8px;
+  margin-bottom: 4px;
 }
 
 input {
-    position: fixed;
-    right: 14px;
-    top: 13px;
-    z-index: 1;
-    width: 45px;
-    height: 45px;
-    opacity: 0;
+  position: fixed;
+  right: 14px;
+  top: 13px;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  opacity: 0;
 }
 
 .line.middle {
-    position: relative;
-    left: -10px;
+  position: relative;
+  left: -10px;
 }
 
 input:checked + .menu-container .burger-button .line {
-    position: absolute;
-    transition: all 0.4s ease-in-out;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
 }
 
 input:checked + .menu-container .burger-button .line:nth-child(2) {
-    opacity: 0;
-    
-
+  opacity: 0;
 }
+
 input:checked + .menu-container .burger-button .line:nth-child(1) {
-    transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
 input:checked + .menu-container .burger-button .line:nth-child(3) {
-    transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /* ------------------------------------------------ */
 /* ----------NAVIGATION / OPEN BURGER-------------- */
 /* ------------------------------------------------ */
-
 nav {
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.73);
-    min-width: 100vw;
-    min-height: 100vh;
-    opacity: 0;
-    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.73);
+  min-width: 100vw;
+  min-height: 100vh;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
 input:checked + .menu-container nav {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    min-width: 100vw;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: xxx-large;
-    font-family: Rubik, serif;
-    text-transform: uppercase;
-   
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  justify-content: space-evenly;
+  text-align: center;
+  text-transform: uppercase;
 }
 
-.menu-text {
-    font-family: Rubik, serif;
-    font-weight: 600;
+.menu-text ul {
+  font-family: Rubik, serif;
+  font-size: 4rem;
+  font-weight: bold;
 }
 
-
-
+li:hover {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #D200A2;
+          text-decoration-color: #D200A2;
+}
 
 /* ------------------------------------------------ */
 /* --------STÖRRE STORLEKAR, DESKTOP -------------- */
 /* ------------------------------------------------ */
-
 @media screen and (min-width: 800px) {
-
-    .astronaut .heading-box {
-        width: 14rem;
-    }
-
-    .astronaut .heading-box .read-our-story-link {
-        text-align: right;
-    }   
-  
-    .astronaut .heading-box .read-our-story-link span {
-        position: relative;
-        left: 0;
-        transition: left 1s cubic-bezier(0.65, 0, 0.35, 1); 
-    }
-
-    /*för att pilen ska röra på sig*/
-    .astronaut .heading-box .read-our-story-link:hover span {
-        left: 10px;
-        
-    }
-} 
-
-
-    
-
-
-/* ------------------------------------------------ */
-/* ------------------------ DARK MODE ------------- */
-/* ------------------------------------------------ */
-/*
-
-@media (prefers-color-scheme: dark) {
-    .astronaut .heading-box .read-our-story-link {
-        color: orangered;
-    }
-}    */
- 
+  .astronaut .heading-box {
+    width: 14rem;
+  }
+  .astronaut .heading-box .read-our-story-link {
+    text-align: right;
+  }
+  .astronaut .heading-box .read-our-story-link span {
+    position: relative;
+    left: 0;
+    transition: left 1s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  /*för att pilen ska röra på sig*/
+  .astronaut .heading-box .read-our-story-link:hover span {
+    left: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
