@@ -1,18 +1,20 @@
 /* ------------------------------------------------ */
 /* --------MINDRE STORLEKAR, MOBIL----------------- */
 /* ------------------------------------------------ */
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 800px) {
     body {
-      background-color: lightcoral;
+      background-color: paleturquoise;
     }
 }
 
-.full-height .text-page {
-  position: absolute;
-  color: #fff;
-  background-image: url("../assets/photos/rymden.jpg");
-  background-size: cover;
-  background-position: cover;
-  font-family: rubik;
- 
-} 
+.text-page {
+  display: flex;
+  gap: 10%;
+}
+.col1 .col2 {
+  width: 45%;
+}
+
+
+
+

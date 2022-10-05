@@ -1,0 +1,23 @@
+body {
+    background-color: palevioletred;
+}
+
+.full-page {
+    min-height: 100vh;
+}
+
+.text-page {
+    h2 {
+        span {
+            display: block;
+        }
+    }
+}
+
+// footer //
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}

@@ -1,17 +1,22 @@
 @charset "UTF-8";
-/* ------------------------------------------------ */
-/* ------------------------ HELPERS --------------- */
-/* ------------------------------------------------ */
+
+@import "vendor/normalize";
+@import "base";
+@import "variables";
+
 * {
   padding: 0;
   margin: 0;
 }
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: palevioletred;
-  }
+@media screen and (min-width: 800px) {
+  @import "mobil";
+  
 }
+@media screen and (min-width: 1024px){
+  @import "desktop";
+}
+
 .full-height {
   min-height: 100vh;
 }
@@ -23,6 +28,8 @@
   background-image: url("../assets/photos/astronaut.jpg");
   background-size: cover;
   background-position: 50% 50%;
+
+  display: none;
 }
 
 .astronaut .heading-box {
@@ -72,9 +79,6 @@
   display: block;
 }
 
-.col1 .col2 {
-  display: flex;
-}
 
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 1------------ */
