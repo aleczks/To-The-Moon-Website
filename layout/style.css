@@ -319,6 +319,22 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
+  padding: 10px;
+  background-color: rgb(3, 7, 30);
+  color: rgb(210, 0, 162);
+}
+footer p {
+  text-shadow: 0 0 6px rgb(210, 0, 162);
+}
+
+.accept-button {
+  text-transform: uppercase;
+  background-color: rgb(8, 19, 92);
+  color: #fff;
+  border: 0;
+  font-weight: 500;
+  padding: 10px;
+  position: relative;
 }
 
 * {
@@ -337,9 +353,19 @@ footer {
   }
 }
 @media screen and (min-width: 800px) {
+  .hidden-quote {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
+  img {
+    display: none;
+  }
+}
+@media screen and (min-width: 800px) {
   .text-page {
     display: flex;
-    gap: 10%;
+    gap: 9%;
   }
 }
 @media screen and (min-width: 800px) {
@@ -349,10 +375,15 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   /* ------------------------------------------------ */
-  /* --------STÖRRE STORLEKAR, DESKTOP -------------- */
+  /* ------------------------- DESKTOP -------------- */
   /* ------------------------------------------------ */
+}
+@media screen and (min-width: 1024px) and (min-width: 1024px) {
+  .full-page {
+    display: flex;
+  }
   body {
-    background-color: palegreen;
+    background-color: pink;
   }
 }
 @media screen and (min-width: 1024px) and (min-width: 1024px) {
@@ -383,7 +414,6 @@ footer {
   background-image: url("../assets/photos/astronaut.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  display: none;
 }
 
 .astronaut .heading-box {
@@ -423,11 +453,7 @@ footer {
   background-image: url("../assets/photos/rymden-min.jpg");
   background-size: cover;
   font-family: Rubik, serif;
-}
-
-.text-page .text-container {
-  position: relative;
-  display: block;
+  display: flex;
 }
 
 /* ------------------------------------------------ */
@@ -469,12 +495,11 @@ h3 {
   left: 7%;
   font-size: 1rem;
   font-weight: 200;
-  line-height: 170%;
   font-family: rubik;
   margin: 0;
 }
 
-/* very nice floating quote, dagens seger */
+/* floating quote */
 .floating-quote {
   position: relative;
   left: 15%;
@@ -512,14 +537,6 @@ span {
   margin-top: -2rem;
 }
 
-/* ------------------------------------------------ */
-/* ---------- MEDIA SCREEN ------------------------ */
-/* ------------------------------------------------ */
-@media screen and (min-width: 1024px) {
-  .full-page {
-    display: flex;
-  }
-}
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 2------------ */
 /* ------------------------------------------------ */

@@ -1,15 +1,27 @@
 /* ------------------------------------------------ */
 /* --------MINDRE STORLEKAR, MOBIL----------------- */
 /* ------------------------------------------------ */
+
 @media screen and (min-width: 800px) {
     body {
       background-color: paleturquoise;
     }
+    
 }
+
+.hidden-quote {
+  display: none;
+}
+   
+img {
+  display: none;
+}
+
+
 
 .text-page {
   display: flex;
-  gap: 10%;
+  gap: 9%;
 }
 .col1 .col2 {
   width: 45%;

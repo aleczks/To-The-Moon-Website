@@ -2,7 +2,7 @@
 
 @import "vendor/normalize";
 @import "base";
-@import "variables";
+
 
 * {
   padding: 0;
@@ -29,7 +29,7 @@
   background-size: cover;
   background-position: 50% 50%;
 
-  display: none;
+  
 }
 
 .astronaut .heading-box {
@@ -72,12 +72,11 @@
   background-image: url("../assets/photos/rymden-min.jpg");
   background-size: cover;
   font-family: Rubik, serif;
+  display: flex;
+  
 }
 
-.text-page .text-container {
-  position: relative;
-  display: block;
-}
+
 
 
 /* ------------------------------------------------ */
@@ -118,15 +117,14 @@ h3 {
   position: relative;
   left: 7%;
   font-size: 1rem;
-  font-weight: 200;
-  line-height: 170%;
+  font-weight: 200;  
   font-family: rubik;
   margin: 0;
 }
 
 
 
-/* very nice floating quote, dagens seger */
+/* floating quote */
 .floating-quote {
   position: relative;
   left: 15%;
@@ -165,16 +163,7 @@ span {
   
 }
 
-/* ------------------------------------------------ */
-/* ---------- MEDIA SCREEN ------------------------ */
-/* ------------------------------------------------ */
 
-@media screen and (min-width: 1024px) {
-  .full-page {
-    display: flex;
-  }
-  
-}
 
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 2------------ */

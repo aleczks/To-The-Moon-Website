@@ -20,4 +20,22 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
+    padding: 10px;
+
+    background-color: rgb(3, 7, 30);
+    color: rgb(210, 0, 162);
+
+    p {
+        text-shadow:0 0 6px rgb(210, 0, 162);
+    }
+}
+.accept-button {
+    text-transform: uppercase;
+    background-color: rgb(8, 19, 92);
+    color: #fff;
+    border: 0;
+    font-weight: 500;
+    padding: 10px;
+    position: relative;
+    
 }

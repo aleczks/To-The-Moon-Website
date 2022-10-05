@@ -1,9 +1,17 @@
 /* ------------------------------------------------ */
-/* --------STÖRRE STORLEKAR, DESKTOP -------------- */
+/* ------------------------- DESKTOP -------------- */
 /* ------------------------------------------------ */
-body {
-    background-color: palegreen;
-}
+
+@media screen and (min-width: 1024px) {
+    .full-page {
+      display: flex;
+     
+    }
+    body {
+        background-color: pink;
+    }
+    
+  }  
 
 
 @media screen and (min-width: 1024px) {
@@ -27,6 +35,7 @@ body {
         left: 10px;
         
     }
+
 } 
 
 
