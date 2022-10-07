@@ -2,17 +2,58 @@ body {
     background-color: palevioletred;
 }
 
+.column-left {
+    padding-right: 5%;
+  }
+  .column-right {
+    padding-left: 5%;
+  }
+/* ------------------------------------------------ */
+/* --------------------DESKTOP ONLY --------------- */
+/* ------------------------------------------------ */
+
 .full-page {
     min-height: 100vh;
 }
 
-.text-page {
-    h2 {
-        span {
-            display: block;
-        }
+.wrapper {
+    display: flex;
+}
+
+
+.arrow-down {
+   position: absolute; 
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   color: #fff;
+   font-size: 2rem;
+   
+}
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+  
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-30px);
+    }
+    60% {
+      transform: translateY(-15px);
     }
 }
+
+
+
+
+
+
+
 
 // footer //
 footer {
@@ -24,6 +65,9 @@ footer {
 
     background-color: rgb(3, 7, 30);
     color: rgb(210, 0, 162);
+    font-size: 0.9rem;
+    display: flex;
+    gap: 20px;
 
     p {
         text-shadow:0 0 6px rgb(210, 0, 162);
@@ -35,7 +79,8 @@ footer {
     color: #fff;
     border: 0;
     font-weight: 500;
-    padding: 10px;
+    padding: 7px 12px;
     position: relative;
+    left: 20%;
     
 }

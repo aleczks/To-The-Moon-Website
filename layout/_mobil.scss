@@ -2,31 +2,49 @@
 /* --------MINDRE STORLEKAR, MOBIL----------------- */
 /* ------------------------------------------------ */
 
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 960px) {
     body {
-      background-color: paleturquoise;
-    }
+      background-color: #D200A2;
+    }   
     
+    .wrapper {
+      display: flex;
+      gap: 10%;
+    }
 }
+/* ------------------------------------------------ */
+/* --------------------GRADIENT IDK --------------- */
+/* ------------------------------------------------ */
 
-.hidden-quote {
-  display: none;
+
+.column-left {
+  padding-right: 5%;
 }
-   
+.column-right {
+  padding-left: 5%;
+}
 img {
-  display: none;
+  float: right;
 }
 
+.column-right {
+  blockquote {
+    padding-top: 50px;
+    font-size: 2.5rem;
+    font-weight: 200;
+    margin: 25px;
+    font-style: italic;
+    color: #D200A2;
+    opacity: .3;
+    background: radial-gradient(#fff, #fff, #D200A2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    
 
-
-.text-page {
-  display: flex;
-  gap: 9%;
+  }
 }
-.col1 .col2 {
-  width: 45%;
-}
-
 
 
 

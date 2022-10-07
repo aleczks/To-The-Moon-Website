@@ -9,12 +9,9 @@
   margin: 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 960px) {
   @import "mobil";
   
-}
-@media screen and (min-width: 1024px){
-  @import "desktop";
 }
 
 .full-height {
@@ -29,7 +26,7 @@
   background-size: cover;
   background-position: 50% 50%;
 
-  
+  display: none;
 }
 
 .astronaut .heading-box {
@@ -66,13 +63,12 @@
   min-height: 100vh;
 }
 
-.text-page {
+.wrapper {
   color: white;
   background-position: cover;
   background-image: url("../assets/photos/rymden-min.jpg");
   background-size: cover;
   font-family: Rubik, serif;
-  display: flex;
   
 }
 
@@ -88,6 +84,7 @@
   width: 85%;
   font-size: xx-large;
   text-shadow: 3px 4px 12px black;
+  margin: 5%;
 }
 
 .space {
@@ -131,6 +128,8 @@ h3 {
   font-size: 2rem;
   font-style: italic;
   font-weight: 200;
+  font-family: 'Times New Roman', Times, serif;
+
 }
 
 span {
@@ -165,26 +164,16 @@ span {
 
 
 
+
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 2------------ */
 /* ------------------------------------------------ */
-.hidden-quote {
-  
-  font-size: 2.5rem;
-  font-weight: 200;
-  margin: 25px;
-  font-style: italic;
-  background-image: linear-gradient( bottom right, #D200A2, white, #D200A2);;
-  
-  -webkit-text-fill-color: pink;
-  opacity: 0.3;
-  
-}
 
 
 .main-article-text {
   margin: 15px;
   font-weight: 300;
+  
 }
 
 /* projekt rosa länk-pilen ej underline + smooth */
@@ -209,25 +198,37 @@ span {
 }
 
 
-
-/*Major Tom som inte vill ha texten fyltande runt sig */
-
-img {
-  
+.img {
   float: right;
-  margin: 0;
   
 }
 
 
 
-
-
-
-
-
-
 /* rör ej !! */
+@media screen and (min-width: 800px) {
+  body {
+      background-color: pink;
+  }
+  .astronaut .heading-box {
+    width: 14rem;
+  }
+  .astronaut .heading-box .read-our-story-link {
+    text-align: right;
+  }
+  .astronaut .heading-box .read-our-story-link span {
+    position: relative;
+    left: 0;
+    transition: left 1s cubic-bezier(0.65, 0, 0.35, 1);
+  }
+  /*för att pilen ska röra på sig*/
+  .astronaut .heading-box .read-our-story-link:hover span {
+    left: 10px;
+  }
+  
+}
+
+
 /* ------------------------------------------------ */
 /* --------------------HAMBURGARMENYN-------------- */
 /* ------------------------------------------------ */
@@ -330,23 +331,4 @@ li:hover {
           text-decoration-color: #D200A2;
 }
 
-/* ------------------------------------------------ */
-/* --------STÖRRE STORLEKAR, DESKTOP -------------- */
-/* ------------------------------------------------ */
-@media screen and (min-width: 800px) {
-  .astronaut .heading-box {
-    width: 14rem;
-  }
-  .astronaut .heading-box .read-our-story-link {
-    text-align: right;
-  }
-  .astronaut .heading-box .read-our-story-link span {
-    position: relative;
-    left: 0;
-    transition: left 1s cubic-bezier(0.65, 0, 0.35, 1);
-  }
-  /*för att pilen ska röra på sig*/
-  .astronaut .heading-box .read-our-story-link:hover span {
-    left: 10px;
-  }
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
