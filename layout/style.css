@@ -362,6 +362,14 @@ body {
     transform: translateY(-15px);
   }
 }
+@media screen and (max-width: 960px) {
+  body {
+    background-color: #D200A2;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
 footer {
   position: fixed;
   bottom: 0;
@@ -395,38 +403,21 @@ footer p {
 }
 
 @media screen and (min-width: 960px) {
-  /* ------------------------------------------------ */
-  /* --------MINDRE STORLEKAR, MOBIL----------------- */
-  /* ------------------------------------------------ */
-  /* ------------------------------------------------ */
-  /* --------------------GRADIENT IDK --------------- */
-  /* ------------------------------------------------ */
-}
-@media screen and (min-width: 960px) and (max-width: 960px) {
-  body {
-    background-color: #D200A2;
-  }
-  .wrapper {
-    display: flex;
-    gap: 10%;
-  }
-}
-@media screen and (min-width: 960px) {
   .column-left {
     padding-right: 5%;
   }
-}
-@media screen and (min-width: 960px) {
   .column-right {
     padding-left: 5%;
   }
-}
-@media screen and (min-width: 960px) {
+  /* ------------------------------------------------ */
+  /* --------------------GRADIENT IDK --------------- */
+  /* ------------------------------------------------ */
   img {
     float: right;
+    transform: rotate(5deg);
+    margin-left: 10px;
+    margin-top: 10px;
   }
-}
-@media screen and (min-width: 960px) {
   .column-right blockquote {
     padding-top: 50px;
     font-size: 2.5rem;
@@ -440,6 +431,7 @@ footer p {
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    line-height: 1.1;
   }
 }
 .full-height {
@@ -495,6 +487,10 @@ footer p {
   font-family: Rubik, serif;
 }
 
+.poem {
+  line-height: 1.9;
+}
+
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 1------------ */
 /* ------------------------------------------------ */
@@ -508,14 +504,14 @@ footer p {
 }
 
 .space {
-  font-size: 300%;
+  font-size: 250%;
   font-family: Rubik, serif;
   position: relative;
   z-index: 3;
 }
 
 .ventures {
-  font-size: 350%;
+  font-size: 290%;
   font-family: "Times New Roman", Times, serif;
   opacity: 0.7;
   position: relative;
@@ -527,7 +523,7 @@ footer p {
 h3 {
   font-family: Rubik, serif;
   font-weight: 400;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .protein-pills-article {
@@ -536,7 +532,7 @@ h3 {
   font-size: 1rem;
   font-weight: 200;
   font-family: rubik;
-  margin: 0;
+  line-height: 1.5;
 }
 
 /* floating quote */
@@ -584,6 +580,7 @@ span {
 .main-article-text {
   margin: 15px;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 /* projekt rosa länk-pilen ej underline + smooth */
@@ -605,10 +602,6 @@ span {
 
 .full-page .pink-major-tom-link:hover .arrow {
   left: 10px;
-}
-
-.img {
-  float: right;
 }
 
 /* rör ej !! */

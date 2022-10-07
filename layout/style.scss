@@ -72,7 +72,9 @@
   
 }
 
-
+.poem {
+  line-height: 1.9;
+}
 
 
 /* ------------------------------------------------ */
@@ -88,14 +90,14 @@
 }
 
 .space {
-  font-size: 300%;
+  font-size: 250%;
   font-family: Rubik, serif;
   position: relative;
   z-index: 3;
 }
 
 .ventures {
-  font-size: 350%;
+  font-size: 290%;
   font-family: "Times New Roman", Times, serif;
   opacity: 0.7;
   position: relative;
@@ -107,7 +109,7 @@
 h3 {
   font-family: Rubik, serif;
   font-weight: 400;
-  font-size: xx-large;
+  font-size: x-large;
 }
 
 .protein-pills-article {
@@ -116,7 +118,7 @@ h3 {
   font-size: 1rem;
   font-weight: 200;  
   font-family: rubik;
-  margin: 0;
+  line-height: 1.5;
 }
 
 
@@ -164,7 +166,6 @@ span {
 
 
 
-
 /* ------------------------------------------------ */
 /* ----------TEXT PAGE SECTION COLUMN 2------------ */
 /* ------------------------------------------------ */
@@ -172,7 +173,8 @@ span {
 
 .main-article-text {
   margin: 15px;
-  font-weight: 300;
+  font-weight: 300;  
+  line-height: 1.5;
   
 }
 
@@ -195,12 +197,6 @@ span {
 
 .full-page .pink-major-tom-link:hover .arrow {
   left: 10px;
-}
-
-
-.img {
-  float: right;
-  
 }
 
 

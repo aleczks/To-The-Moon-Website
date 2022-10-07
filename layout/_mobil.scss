@@ -1,30 +1,18 @@
-/* ------------------------------------------------ */
-/* --------MINDRE STORLEKAR, MOBIL----------------- */
-/* ------------------------------------------------ */
-
-@media screen and (max-width: 960px) {
-    body {
-      background-color: #D200A2;
-    }   
-    
-    .wrapper {
-      display: flex;
-      gap: 10%;
-    }
-}
-/* ------------------------------------------------ */
-/* --------------------GRADIENT IDK --------------- */
-/* ------------------------------------------------ */
-
-
 .column-left {
   padding-right: 5%;
 }
 .column-right {
   padding-left: 5%;
 }
+/* ------------------------------------------------ */
+/* --------------------GRADIENT IDK --------------- */
+/* ------------------------------------------------ */
+
 img {
   float: right;
+  transform: rotate(5deg);
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .column-right {
@@ -41,6 +29,7 @@ img {
     -webkit-background-clip: text;
     text-fill-color: transparent;
     -webkit-text-fill-color: transparent;
+    line-height: 1.1;
     
 
   }

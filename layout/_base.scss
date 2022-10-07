@@ -2,12 +2,14 @@ body {
     background-color: palevioletred;
 }
 
+
 .column-left {
     padding-right: 5%;
   }
   .column-right {
     padding-left: 5%;
   }
+
 /* ------------------------------------------------ */
 /* --------------------DESKTOP ONLY --------------- */
 /* ------------------------------------------------ */
@@ -48,6 +50,15 @@ body {
     }
 }
 
+@media screen and (max-width: 960px) {
+  body {
+    background-color: #D200A2;
+  }   
+  .desktop-only {
+    display: none;
+  }
+
+}
 
 
 
