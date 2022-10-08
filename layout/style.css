@@ -382,6 +382,7 @@ footer {
   color: rgb(210, 0, 162);
   font-size: 0.9rem;
   display: flex;
+  z-index: 5;
 }
 footer p {
   text-shadow: 0 0 6px rgb(210, 0, 162);
@@ -420,7 +421,6 @@ footer p {
 @media screen and (min-width: 960px) {
   .full-page {
     display: flex;
-    gap: 70px;
   }
   .column-left .column-right {
     width: 50%;
@@ -441,7 +441,7 @@ footer p {
     margin: 25px;
     font-style: italic;
     color: #D200A2;
-    opacity: 0.3;
+    opacity: 0.4;
     background: radial-gradient(#fff, #fff, #D200A2);
     background-clip: text;
     -webkit-background-clip: text;
@@ -457,7 +457,6 @@ footer p {
   background-image: url("../assets/photos/astronaut.jpg");
   background-size: cover;
   background-position: 50% 50%;
-  display: none;
 }
 
 .astronaut .heading-box {
@@ -601,6 +600,7 @@ span {
   text-decoration: underline;
   color: #D200A2;
   margin: 25px;
+  padding-bottom: 50px;
 }
 
 .arrow {
