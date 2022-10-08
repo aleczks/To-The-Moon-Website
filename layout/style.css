@@ -382,7 +382,7 @@ footer {
   color: rgb(210, 0, 162);
   font-size: 0.9rem;
   display: flex;
-  z-index: 5;
+  z-index: -1;
 }
 footer p {
   text-shadow: 0 0 6px rgb(210, 0, 162);
@@ -730,7 +730,7 @@ ul {
 
 .menu-text ul {
   font-family: Rubik, serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 

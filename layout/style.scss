@@ -304,6 +304,7 @@ nav {
   min-height: 100vh;
   opacity: 0;
   transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+  
 }
 
 input:checked + .menu-container nav {
@@ -325,7 +326,7 @@ ul {
 
 .menu-text ul {
   font-family: Rubik, serif;
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-weight: bold;
 }
 
