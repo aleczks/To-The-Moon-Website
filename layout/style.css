@@ -322,7 +322,7 @@ body {
 }
 
 .wrapper {
-  display: flex;
+  display: block;
 }
 
 .arrow-down {
@@ -371,16 +371,17 @@ body {
   }
 }
 footer {
+  align-items: center;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 10px;
+  padding: 1%;
+  height: 25px;
   background-color: rgb(3, 7, 30);
   color: rgb(210, 0, 162);
   font-size: 0.9rem;
   display: flex;
-  gap: 20px;
 }
 footer p {
   text-shadow: 0 0 6px rgb(210, 0, 162);
@@ -390,24 +391,39 @@ footer p {
   text-transform: uppercase;
   background-color: rgb(8, 19, 92);
   color: #fff;
-  border: 0;
   font-weight: 500;
-  padding: 7px 12px;
+  padding: 6px 10px;
   position: relative;
-  left: 20%;
+  left: 45%;
+  width: 82px;
+  bottom: 0;
+}
+
+.accept-button:hover {
+  background-color: #002A53;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 * {
   padding: 0;
-  margin: 0;
+}
+
+.full-height {
+  min-height: 100vh;
 }
 
 @media screen and (min-width: 960px) {
-  .column-left {
-    padding-right: 5%;
+  .full-page {
+    display: flex;
+    gap: 70px;
   }
-  .column-right {
-    padding-left: 5%;
+  .column-left .column-right {
+    width: 50%;
   }
   /* ------------------------------------------------ */
   /* --------------------GRADIENT IDK --------------- */
@@ -434,10 +450,6 @@ footer p {
     line-height: 1.1;
   }
 }
-.full-height {
-  min-height: 100vh;
-}
-
 /* ------------------------------------------------ */
 /* -------------------- ASTRONAUT SECTION---------- */
 /* ------------------------------------------------ */
@@ -538,11 +550,12 @@ h3 {
 /* floating quote */
 .floating-quote {
   position: relative;
-  left: 15%;
+  left: 7%;
   font-size: 2rem;
   font-style: italic;
   font-weight: 200;
   font-family: "Times New Roman", Times, serif;
+  display: block;
 }
 
 span {

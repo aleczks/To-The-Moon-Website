@@ -4,18 +4,24 @@
 @import "base";
 
 
-* {
-  padding: 0;
-  margin: 0;
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
-@media screen and (min-width: 960px) {
-  @import "mobil";
+* {
+  padding: 0;
   
 }
 
 .full-height {
   min-height: 100vh;
+}
+
+@media screen and (min-width: 960px) {
+  @import "mobil";
+  
 }
 
 /* ------------------------------------------------ */
@@ -126,12 +132,14 @@ h3 {
 /* floating quote */
 .floating-quote {
   position: relative;
-  left: 15%;
+  left: 7%;
   font-size: 2rem;
   font-style: italic;
   font-weight: 200;
   font-family: 'Times New Roman', Times, serif;
-
+  display: block;
+  
+  
 }
 
 span {
@@ -175,8 +183,9 @@ span {
   margin: 15px;
   font-weight: 300;  
   line-height: 1.5;
-  
 }
+
+
 
 /* projekt rosa länk-pilen ej underline + smooth */
 .pink-major-tom-link {
