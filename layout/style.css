@@ -382,7 +382,7 @@ footer {
   color: rgb(210, 0, 162);
   font-size: 0.9rem;
   display: flex;
-  z-index: -1;
+  z-index: 0;
 }
 footer p {
   text-shadow: 0 0 6px rgb(210, 0, 162);
@@ -496,7 +496,7 @@ footer p {
   background-image: url("../assets/photos/rymden-min.jpg");
   background-size: cover;
   font-family: Rubik, serif;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 .poem {
@@ -652,7 +652,7 @@ span {
   position: fixed;
   right: 30px;
   top: 20px;
-  z-index: 2;
+  z-index: 1;
   pointer-events: none;
 }
 
@@ -716,6 +716,8 @@ input:checked + .menu-container nav {
   display: block;
   opacity: 1;
   visibility: visible;
+  position: relative;
+  z-index: 1;
 }
 
 ul {
