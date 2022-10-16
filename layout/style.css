@@ -395,7 +395,7 @@ footer p {
   font-weight: 500;
   padding: 6px 10px;
   position: relative;
-  left: 45%;
+  left: 30%;
   width: 82px;
   bottom: 0;
 }
@@ -457,6 +457,7 @@ footer p {
   background-image: url("../assets/photos/astronaut.jpg");
   background-size: cover;
   background-position: 50% 50%;
+  overflow: hidden;
 }
 
 .astronaut .heading-box {
@@ -652,7 +653,7 @@ span {
   position: fixed;
   right: 30px;
   top: 20px;
-  z-index: 1;
+  z-index: 3;
   pointer-events: none;
 }
 
