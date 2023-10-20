@@ -374,7 +374,6 @@ footer {
   align-items: center;
   position: fixed;
   bottom: 0;
-  left: 0;
   width: 100%;
   padding: 1%;
   height: 25px;
@@ -382,6 +381,7 @@ footer {
   color: rgb(210, 0, 162);
   font-size: 0.9rem;
   display: flex;
+  justify-content: space-between;
   z-index: 0;
 }
 footer p {
@@ -392,10 +392,10 @@ footer p {
   text-transform: uppercase;
   background-color: rgb(8, 19, 92);
   color: #fff;
-  font-weight: 500;
+  font-weight: 400;
   padding: 6px 10px;
-  position: relative;
-  left: 30%;
+  border-radius: 4px;
+  margin-right: 2rem;
   width: 82px;
   bottom: 0;
 }
